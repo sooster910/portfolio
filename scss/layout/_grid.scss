@@ -1,0 +1,145 @@
+.container__about__grid {
+  display: grid;
+  color: set-text-color($primary-color);
+  grid-gap: 50px;
+  grid-template-areas:
+    "bio bioimage "
+    "title title"
+    "job1 job2"
+    "me1 me3";
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+}
+
+.title {
+  grid-area: title;
+  padding-top: unquote("-webkit-calc(15% - 50px)");
+  padding-left: unquote("-moz-calc(15%-50px)");
+}
+
+.container__projects__grid {
+  animation-delay: 1.4s;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-auto-rows: 310px 280px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.project {
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+.container__projects__grid {
+  .project__item--1,
+  .project__item--6 {
+    transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    &:hover {
+      -moz-transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      opacity: 1;
+      z-index: 3;
+      @include easeOut-fast;
+    }
+    // &::before {
+    //   content: "";
+    //   background: rgba(0, 0, 0, 0.6);
+    //   position: relative;
+    //   width: 100%;
+    //   height: 100%;
+    // }
+  }
+}
+
+.project__item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+}
+
+.project__item__text--3 {
+  display: inline-block;
+  position: relative;
+  color: rgba(73, 73, 73, 0.5);
+  font-family: $font-second;
+  font-size: 7em;
+}
+.project__item__title {
+  bottom: 0;
+  position: absolute;
+  padding: 20px;
+}
+.project__item__desc {
+  padding: 20px;
+}
+.project__icons {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+//loading animation
+
+.loading__animation__1,
+.loading__animation__2 {
+  opacity: 0;
+  animation: fade-in-right ease 0.6s forwards;
+}
+.loading__animtaion__4 {
+  opacity: 0;
+  animation: fade-in-bottom ease 0.6s forwards;
+  animation-delay: 1.4s;
+}
+.loading__animation__3 {
+  opacity: 0;
+  animation: fade-in-bottom ease 0.6s forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// .loading__animation__2{
+
+//   transform: scaleX(0);
+//   transform-origin: left;
+//   animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+//   animation-delay: 0.4s;
+// }
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

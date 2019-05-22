@@ -1,0 +1,14 @@
+object {
+  width: 800px;
+  height: 1024px;
+}
+.contact__tag {
+  @include easeOut;
+}
+
+#contact {
+  h2 {
+    font-family: $font-Lato;
+    font-weight: 400;
+  }
+}
