@@ -979,9 +979,13 @@ h5 {
     main#about, main#projects, main#contact {
       padding: 15% 0 0 0; }
     main h1.lg-heading {
-      font-size: 4rem !important; }
+      font-size: 4rem !important;
+      padding: 0;
+      margin-bottom: 2rem; }
       main h1.lg-heading::after {
         display: none; }
+    main h2.sm-heading {
+      padding: 0; }
   .bio-image {
     margin-bottom: 5rem; }
   object {
