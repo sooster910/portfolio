@@ -105,6 +105,7 @@
     width: 100%;
   }
   .bio-image {
+    width: 100%;
     padding-bottom: 15%;
   }
 
@@ -121,12 +122,35 @@
   }
 
   main {
-    padding: 67px 40px;
     margin: 0;
 
-    h1 {
-      font-size: 5rem !important;
+    &#about,
+    &#projects,
+    &#contact {
+      padding: 15% 0 0 0;
     }
+    h1 {
+      &.lg-heading {
+        font-size: 4rem !important;
+        padding: 0;
+        margin-bottom: 2rem;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    h2 {
+      &.sm-heading {
+        padding: 0;
+      }
+    }
+  }
+  .bio-image {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  .bio {
+    width: 100%;
   }
   object {
     width: 300px;
