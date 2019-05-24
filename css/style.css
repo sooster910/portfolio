@@ -59,7 +59,7 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      background-image: url("/img/portrait.jpg");
+      background-image: url("../dist/img/portrait.jpg");
       width: 100%;
       height: 100vh;
       background-size: cover;
@@ -370,7 +370,8 @@ h3 {
     position: relative;
     align-items: center;
     width: 100%;
-    white-space: nowrap; }
+    white-space: nowrap;
+    overflow: hidden; }
     h1.lg-heading:after,
     h2.lg-heading:after,
     h3.lg-heading:after {
@@ -576,16 +577,16 @@ header {
   letter-spacing: 0.1rem; }
 
 .box__1::before {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/citytech-logo_copy.png"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../dist/img/citytech-logo_copy.png"); }
 
 .box__2::before {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/NYC_DOE_Logo.png"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../dist/img/NYC_DOE_Logo.png"); }
 
 .box__3::before {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/self-thought.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../dist/img/self-thought.jpg"); }
 
 .box__4::before {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/rockclimbing.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../dist/img/rockclimbing.jpg"); }
 
 .box {
   position: relative;
@@ -712,7 +713,7 @@ main {
     display: inline-block;
     width: 48px;
     height: 54px;
-    background: url("/img/icons8-pdf-64.png");
+    background: url("../dist/img/icons8-pdf-64.png");
     background-size: cover;
     position: relative;
     animation: shake 2s infinite;
@@ -936,7 +937,7 @@ h5 {
     height: 30vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("/img/portrait.jpg");
+      background: url("img/portrait.jpg");
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -963,8 +964,8 @@ h5 {
   .bio {
     width: 100%; }
   .bio-image {
-    padding-bottom: 15%;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 15%; }
   object {
     width: 400px;
     height: 512px;
@@ -987,7 +988,10 @@ h5 {
     main h2.sm-heading {
       padding: 0; }
   .bio-image {
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    width: 100%; }
+  .bio {
+    width: 100%; }
   object {
     width: 300px;
     height: 384px; } }
