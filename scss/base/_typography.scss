@@ -7,13 +7,14 @@ h3 {
   &.lg-heading {
     padding-left: 80px;
     padding-right: 80px;
-    font-size: 15rem;
+    font-size: 6rem;
     font-family: $font-Playfair;
     padding-bottom: 5rem;
     position: relative;
     align-items: center;
     width: 100%;
     white-space: nowrap;
+    overflow: hidden;
     &:after {
       background-color: #989079;
       content: "";
