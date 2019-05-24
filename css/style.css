@@ -963,7 +963,8 @@ h5 {
   .bio {
     width: 100%; }
   .bio-image {
-    padding-bottom: 15%; }
+    padding-bottom: 15%;
+    width: 100%; }
   object {
     width: 400px;
     height: 512px;
@@ -974,10 +975,15 @@ h5 {
     margin: 0;
     width: 100%; }
   main {
-    padding: 67px 40px;
     margin: 0; }
-    main h1 {
-      font-size: 5rem !important; }
+    main#about, main#projects, main#contact {
+      padding: 15% 0 0 0; }
+    main h1.lg-heading {
+      font-size: 4rem !important; }
+      main h1.lg-heading::after {
+        display: none; }
+  .bio-image {
+    margin-bottom: 5rem; }
   object {
     width: 300px;
     height: 384px; } }
