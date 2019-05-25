@@ -987,11 +987,13 @@ h5 {
       font-size: 4.5rem !important;
       padding: 0;
       text-align: center;
-      margin-bottom: 2rem; }
+      margin-bottom: 4rem;
+      margin-top: 2rem; }
       main h1.lg-heading::after {
         display: none; }
     main h2.sm-heading {
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 4rem; }
   .box {
     position: relative;
     overflow: hidden;
