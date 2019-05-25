@@ -997,6 +997,8 @@ h5 {
     .box::before {
       left: -50%;
       transform: skewX(-5deg); }
+  .box span::before {
+    background: none; }
   .contact-info {
     text-align: center; }
   .bio-image {

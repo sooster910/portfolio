@@ -162,6 +162,9 @@
       transform: skewX(-5deg);
     }
   }
+  .box span::before {
+    background: none;
+  }
 
   .contact-info {
     text-align: center;
