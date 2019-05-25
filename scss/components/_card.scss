@@ -43,7 +43,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   &:hover::before {
     left: -50%;
     transform: skewX(-5deg);
@@ -56,6 +55,19 @@
 
     // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
+
+  // &:hover::before {
+  //   left: -50%;
+  //   transform: skewX(-5deg);
+  // }
+  // &__content {
+  //   position: relative;
+  //   margin: 5px;
+
+  //   border: 0px solid $primary-text-color;
+
+  //   // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  // }
 }
 
 .box span {
