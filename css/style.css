@@ -980,6 +980,8 @@ h5 {
     min-width: 100%;
     min-height: 100%;
     z-index: -100; }
+  .landing__border {
+    display: none; }
   main {
     margin: 0; }
     main#about, main#projects, main#contact {

@@ -4,9 +4,6 @@
 //   });
 // });
 
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
 $(document).ready(function() {
   // $(".landing__border").css("visibility", "visible");
 
