@@ -4,6 +4,9 @@
 //   });
 // });
 
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
 $(document).ready(function() {
   // $(".landing__border").css("visibility", "visible");
 
@@ -63,6 +66,7 @@ function startAnimation() {
   document.querySelector("landing__border").style.animationPlayState =
     "running";
 }
+
 window.addEventListener("load", startAnimation);
 //select DOM Items
 
