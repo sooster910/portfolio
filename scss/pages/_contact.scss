@@ -1,6 +1,8 @@
 object {
-  width: 800px;
-  height: 1024px;
+  // width: 800px;
+  // height: 1024px;
+  width: 100%;
+  min-height: 100vh;
 }
 .contact__tag {
   @include easeOut;
@@ -10,5 +12,11 @@ object {
   h2 {
     font-family: $font-Lato;
     font-weight: 400;
+  }
+}
+.contact {
+  &__github,
+  &__linkedin {
+    visibility: hidden;
   }
 }
