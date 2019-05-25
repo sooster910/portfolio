@@ -35,7 +35,8 @@ video {
 
 .landing {
   &__border {
-    visibility: hidden;
+    // visibility: hidden;
+    animation-play-state: paused;
     position: relative;
     display: flex;
     justify-content: center;
@@ -59,7 +60,7 @@ video {
       width: 0%;
       height: 0%;
       animation: linear__animation 1s linear forwards;
-      animation-delay: 2s;
+      // animation-delay: 1s;
     }
 
     &::after {
@@ -72,7 +73,7 @@ video {
       width: 0%;
       height: 0%;
       animation: linear__animation2 1s linear forwards;
-      animation-delay: 3s;
+      animation-delay: 1s;
     }
   }
 
