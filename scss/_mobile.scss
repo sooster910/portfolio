@@ -123,6 +123,18 @@
     margin: 0;
     width: 100%;
   }
+  video {
+    display: none;
+  }
+  #home {
+    background: url("../img/portrait.jpg");
+    background-size: cover;
+    background-position: center;
+
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
 
   main {
     margin: 0;

@@ -17,6 +17,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   // overflow: hidden;
 }
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 section {
   padding: 0 5% 10% 15%;
 }
