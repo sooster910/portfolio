@@ -58,8 +58,8 @@ video {
       background: transparent;
       width: 0%;
       height: 0%;
-      // animation-delay: 2s;
       animation: linear__animation 1s linear forwards;
+      animation-delay: 2s;
     }
 
     &::after {
@@ -72,7 +72,7 @@ video {
       width: 0%;
       height: 0%;
       animation: linear__animation2 1s linear forwards;
-      animation-delay: 1s;
+      animation-delay: 3s;
     }
   }
 
