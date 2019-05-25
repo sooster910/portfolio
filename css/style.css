@@ -917,7 +917,6 @@ h5 {
 @media screen and (max-width: 799px) {
   main {
     align-items: center;
-    text-align: center;
     padding: 4rem; }
   #logo {
     margin: 0;
@@ -954,6 +953,9 @@ h5 {
   section {
     padding-left: 0;
     padding-right: 0; }
+  .about-info,
+  .skills {
+    padding: 5%; }
   .project__contents {
     width: 100%; }
   .header1 {
@@ -980,14 +982,25 @@ h5 {
     main#about, main#projects, main#contact {
       padding: 15% 0 0 0; }
     main h1.lg-heading {
-      font-size: 4rem !important;
+      font-size: 4.5rem !important;
       padding: 0;
+      text-align: center;
       margin-bottom: 2rem; }
       main h1.lg-heading::after {
         display: none; }
     main h2.sm-heading {
       padding: 0; }
+  .box {
+    position: relative;
+    overflow: hidden;
+    border: 0px solid rgba(0, 0, 0, 0.5); }
+    .box::before {
+      left: -50%;
+      transform: skewX(-5deg); }
+  .contact-info {
+    text-align: center; }
   .bio-image {
+    margin-top: 5rem;
     margin-bottom: 5rem;
     width: 100%; }
   .bio {
