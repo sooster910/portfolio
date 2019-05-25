@@ -2,20 +2,6 @@
 }
 //desktops & laptops
 @include mediaLg {
-  // .about-info {
-  //   grid-template-areas:
-  //     "bioimage"
-  //     "bio"
-  //     "title"
-  //     "job1"
-  //     "job2"
-  //     "job3"
-  //     "me1"
-  //     "me2"
-  //     "me3";
-
-  //   grid-template-columns: 1fr;
-  // }
 }
 
 //tablets & small laptop
@@ -153,7 +139,8 @@
 
         padding: 0;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
         &::after {
           display: none;
         }
@@ -162,6 +149,7 @@
     h2 {
       &.sm-heading {
         padding: 0;
+        margin-bottom: 4rem;
       }
     }
   }
