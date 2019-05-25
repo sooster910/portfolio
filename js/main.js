@@ -5,7 +5,7 @@
 // });
 
 $(document).ready(function() {
-  $(".landing__border").css("visibility", "visible");
+  // $(".landing__border").css("visibility", "visible");
 
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -59,6 +59,11 @@ function showDiv() {
   }
 }
 
+function startAnimation() {
+  document.querySelector("landing__border").style.animationPlayState =
+    "running";
+}
+window.addEventListener("load", startAnimation);
 //select DOM Items
 
 const menuBtn = document.querySelector(".menu-btn");
