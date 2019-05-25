@@ -1,10 +1,12 @@
-$(window).on("load", function() {
-  $(".loader .inner").fadeOut(200, function() {
-    $(".loader").fadeOut(250);
-  });
-});
+// $(window).on("load", function() {
+//   $(".loader .inner").fadeOut(500, function() {
+//     $(".loader").fadeOut(750);
+//   });
+// });
 
 $(document).ready(function() {
+  $(".landing__border").css("visibility", "visible");
+
   $(".owl-carousel").owlCarousel({
     loop: true,
     items: 4,
