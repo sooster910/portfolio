@@ -9,7 +9,7 @@ $show-mobile-home-image: true;
 
 @mixin background {
   @if $show-mobile-home-image {
-    &#bg-img {
+    &#home {
       background: $mobile-home-image;
       background-attachment: fixed;
       background-size: cover;

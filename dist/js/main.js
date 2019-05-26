@@ -1,12 +1,16 @@
-// $(window).on("load", function() {
-//   $(".loader .inner").fadeOut(500, function() {
-//     $(".loader").fadeOut(750);
-//   });
+$(window).on("load", function() {
+  $(".loader .inner").fadeOut(200, function() {
+    $(".loader").fadeOut(100);
+  });
+});
+
+// var loader = document.getElementById("loader");
+
+// window.addEventListener("load", function() {
+//   loader.style.display = "none";
 // });
 
 $(document).ready(function() {
-  // $(".landing__border").css("visibility", "visible");
-
   $(".owl-carousel").owlCarousel({
     loop: true,
     items: 4,
@@ -59,12 +63,6 @@ function showDiv() {
   }
 }
 
-function startAnimation() {
-  document.querySelector("landing__border").style.animationPlayState =
-    "running";
-}
-
-window.addEventListener("load", startAnimation);
 //select DOM Items
 
 const menuBtn = document.querySelector(".menu-btn");

@@ -1,17 +1,17 @@
-// .loader {
-//   height: 100%;
-//   width: 100%;
-//   background-color: #fff;
-//   position: fixed;
-//   top: 0px;
-//   left: 0px;
-//   z-index: 1000;
-//   .inner {
-//     width: 100%;
-//     height: 100%;
-//     background: url("/dist/img/45.gif") center center no-repeat;
-//   }
-// }
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  .inner {
+    width: 100%;
+    height: 100%;
+    background: url("/dist/img/45.gif") center center no-repeat;
+  }
+}
 
 video {
   position: absolute;
@@ -72,8 +72,9 @@ video {
       background: transparent;
       width: 0%;
       height: 0%;
+
       animation: linear__animation2 1s linear forwards;
-      animation-delay: 1s;
+      animation-delay: 2s;
     }
   }
 

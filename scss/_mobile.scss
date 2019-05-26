@@ -110,6 +110,8 @@
     width: 100%;
     //new for mobile background
     height: 100%;
+  }
+  #home {
     @include background;
   }
   video {
@@ -125,18 +127,7 @@
   //   z-index: -100;
   // }
   .landing__border {
-    &::before {
-      border: none;
-      animation-play-state: paused;
-      -moz-animation-play-state: paused;
-      -webkit-animation-play-state: paused;
-    }
-    &::after {
-      border: none;
-      animation-play-state: paused;
-      -moz-animation-play-state: paused;
-      -webkit-animation-play-state: paused;
-    }
+    display: none;
   }
   .icon {
     z-index: 1;
