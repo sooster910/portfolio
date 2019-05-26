@@ -967,18 +967,28 @@ h5 {
 @media screen and (max-width: 500px) {
   body {
     margin: 0;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+    body#bg-img {
+      background: url("../img/portrait.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
   video {
-    display: none; }
-  #home {
-    background: url("../img/portrait.jpg");
-    background-size: cover;
-    background-position: center;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100; }
-  .landing__border {
-    display: none; }
+    display: none !important; }
+  .landing__border::before {
+    border: none;
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused; }
+  .landing__border::after {
+    border: none;
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused; }
+  .icon {
+    z-index: 1; }
   main {
     margin: 0; }
     main#about, main#projects, main#contact {
