@@ -17,13 +17,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   // overflow: hidden;
 }
-.preload * {
-  transition: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-}
 
 section {
   padding: 0 5% 10% 15%;

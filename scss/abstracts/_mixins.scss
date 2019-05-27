@@ -4,17 +4,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-$mobile-home-image: url("../img/portrait.jpg");
+// $mobile-home-image: url("../img/portrait.jpg");
 $show-mobile-home-image: true;
 
-@mixin background {
-  @if $show-mobile-home-image {
-    &#home {
-      background: $mobile-home-image;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  }
-}
+// @mixin background {
+//   @if $show-mobile-home-image {
+//     &.landing__bg {
+//       background: $mobile-home-image;
+//       background-attachment: fixed;
+//       background-size: cover;
+//       background-position: center;
+//       background-repeat: no-repeat;
+//     }
+//   }
+// }
