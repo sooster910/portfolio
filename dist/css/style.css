@@ -105,7 +105,9 @@
   .loader .inner {
     width: 100%;
     height: 100%;
-    background: url("../img/45.gif") center center no-repeat; }
+    background: url("../img/45.gif") center center no-repeat;
+    -webkit-background: url("../img/45.gif") center center no-repeat;
+    -moz-background: url("../img/45.gif") center center no-repeat; }
 
 video {
   position: absolute;
@@ -342,7 +344,8 @@ object {
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-rendering: optimizeLegibility; }
 
 body {
   background: #444;
@@ -420,6 +423,7 @@ p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #989079;
+  text-align: justify;
   letter-spacing: 0.1rem; }
   p.p-lg {
     font-size: 1.1rem;
@@ -919,10 +923,6 @@ h5 {
   height: 80px;
   color: #989079; }
 
-@media screen and (min-width: 1171px) {
-  .landing__bg {
-    display: none; } }
-
 @media screen and (max-width: 799px) {
   main {
     align-items: center;
@@ -987,21 +987,6 @@ h5 {
     margin: 0;
     width: 100%;
     height: 100%; }
-  video {
-    display: none !important; }
-  .landing__bg {
-    background: url("../img/portrait.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    top: 0;
-    left: 0;
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100; }
   .landing__border {
     display: none; }
   .icon {
