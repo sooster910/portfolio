@@ -4,12 +4,6 @@ $(window).on("load", function() {
   });
 });
 
-// var loader = document.getElementById("loader");
-
-// window.addEventListener("load", function() {
-//   loader.style.display = "none";
-// });
-
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
     loop: true,
