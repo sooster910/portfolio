@@ -1,4 +1,10 @@
 //Google Fonts
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @mixin easeOut {
   transition: all 0.7s ease-out;
@@ -48,3 +54,18 @@
     @return white;
   }
 }
+
+// $mobile-home-image: url("../img/portrait.jpg");
+$show-mobile-home-image: true;
+
+// @mixin background {
+//   @if $show-mobile-home-image {
+//     &.landing__bg {
+//       background: $mobile-home-image;
+//       background-attachment: fixed;
+//       background-size: cover;
+//       background-position: center;
+//       background-repeat: no-repeat;
+//     }
+//   }
+// }
