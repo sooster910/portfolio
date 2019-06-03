@@ -20,3 +20,30 @@ object {
     visibility: hidden;
   }
 }
+.pdf__img {
+  display: inline-block;
+  width: 48px;
+  height: 54px;
+  background: url("../img/icons8-pdf-64.png");
+  background-size: cover;
+
+  position: relative;
+  animation: shake 2s infinite;
+  cursor: pointer;
+  &:hover {
+    animation-play-state: paused;
+  }
+  &::before &::after {
+    background-color: $primary-text-color;
+    width: 48px;
+    height: 54px;
+    content: "";
+    position: relative;
+  }
+  &::after {
+    animation: blinks 1s infinite;
+  }
+  &::before {
+    animation: blinks 1.2s infinite;
+  }
+}
