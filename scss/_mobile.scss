@@ -108,43 +108,37 @@
   }
 }
 @include mediaSm {
+  #home {
+    margin: 0;
+    padding: 0;
+  }
   body {
     margin: 0;
     width: 100%;
     //new for mobile background
     height: 100%;
   }
-  // #home {
-  //   @include background;
-  // }
 
-  //replace poster
-  // video {
-  //   display: none !important;
-  // }
-  // .landing__bg {
-  //   background: url("../img/portrait.jpg");
-  //   background-attachment: fixed;
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   display: block;
-  //   top: 0;
-  //   left: 0;
-  //   position: fixed;
-  //   min-width: 100%;
-  //   min-height: 100%;
-  //   z-index: -100;
-  // }
-  // #home {
-  //   background: url("../img/portrait.jpg");
-  //   background-size: cover;
-  //   background-position: center;
+  .background-img {
+    background: url("../img/portrait.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  //   min-width: 100%;
-  //   min-height: 100%;
-  //   z-index: -100;
-  // }
+    min-width: 100%;
+    min-height: 100%;
+    video {
+      display: none;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
   .landing__border {
     display: none;
   }
@@ -175,7 +169,6 @@
     h2 {
       &.sm-heading {
         padding: 0;
-        margin-bottom: 4rem;
       }
     }
   }
