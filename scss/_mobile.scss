@@ -44,7 +44,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait.jpg");
+      background: url('../img/portrait.jpg');
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -81,15 +81,15 @@
 
   .container__about__grid {
     grid-template-areas:
-      "bioimage"
-      "bio"
-      "title"
-      "job1"
-      "job2"
-      "job3"
-      "me1"
-      "me2"
-      "me3";
+      'bioimage'
+      'bio'
+      'title'
+      'job1'
+      'job2'
+      'job3'
+      'me1'
+      'me2'
+      'me3';
 
     grid-template-columns: 1fr;
   }
@@ -123,7 +123,7 @@
   }
 
   .background-img {
-    background: url("../img/portrait.jpg");
+    background: url('../img/portrait.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@
       display: none;
     }
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       background: rgba(0, 0, 0, 0.8);
       min-width: 100%;

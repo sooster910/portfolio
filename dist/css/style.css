@@ -930,7 +930,7 @@ h5 {
   .header1 {
     margin: 0; }
   .container__about__grid {
-    grid-template-areas: "bioimage" "bio" "title" "job1" "job2" "job3" "me1" "me2" "me3";
+    grid-template-areas: 'bioimage' 'bio' 'title' 'job1' 'job2' 'job3' 'me1' 'me2' 'me3';
     grid-template-columns: 1fr; }
   .bio {
     width: 100%; }
@@ -962,7 +962,7 @@ h5 {
     .background-img video {
       display: none; }
     .background-img:after {
-      content: "";
+      content: '';
       position: absolute;
       background: rgba(0, 0, 0, 0.8);
       min-width: 100%;
