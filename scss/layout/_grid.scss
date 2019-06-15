@@ -3,18 +3,18 @@
   color: set-text-color($primary-color);
   grid-gap: 50px;
   grid-template-areas:
-    "bio bioimage "
-    "title title"
-    "job1 job2"
-    "me1 me3";
+    'bio bioimage '
+    'title title'
+    'job1 job2'
+    'me1 me3';
   grid-template-columns: repeat(2, 1fr);
   // grid-template-rows: repeat(2, 1fr);
 }
 
 .title {
   grid-area: title;
-  padding-top: unquote("-webkit-calc(15% - 50px)");
-  padding-left: unquote("-moz-calc(15%-50px)");
+  padding-top: unquote('-webkit-calc(15% - 50px)');
+  padding-left: unquote('-moz-calc(15%-50px)');
 }
 
 .container__projects__grid {

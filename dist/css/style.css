@@ -560,7 +560,7 @@ h4 {
   display: grid;
   color: white;
   grid-gap: 50px;
-  grid-template-areas: "bio bioimage " "title title" "job1 job2" "me1 me3";
+  grid-template-areas: 'bio bioimage ' 'title title' 'job1 job2' 'me1 me3';
   grid-template-columns: repeat(2, 1fr); }
 
 .title {
