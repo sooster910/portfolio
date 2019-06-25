@@ -159,7 +159,6 @@ object {
 .contact__email__link {
   letter-spacing: 0.2rem; }
 
-.contact
 .pdf__img {
   display: inline-block;
   width: 48px;
@@ -169,23 +168,20 @@ object {
   position: relative;
   animation: shake 2s infinite;
   cursor: pointer; }
-  .contact
-.pdf__img:hover {
+  .pdf__img:hover {
     animation-play-state: paused; }
-  .contact
-.pdf__img::before .contact
-.pdf__img::after {
+  .pdf__img::before .pdf__img::after {
     background-color: #989079;
     width: 48px;
     height: 54px;
-    content: "";
+    content: '';
     position: relative; }
-  .contact
-.pdf__img::after {
-    animation: blinks 1s infinite; }
-  .contact
-.pdf__img::before {
-    animation: blinks 1.2s infinite; }
+  .pdf__img::after {
+    animation: blinks 1s infinite;
+    -webkit-animation: blinks 1s infinite; }
+  .pdf__img::before {
+    animation: blinks 1.2s infinite;
+    -webkit-animation: blinks 1.2s infinite; }
 
 /*================
   About
