@@ -16,7 +16,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main {
+  padding: 8% 10%;
+  min-height: calc(100vh - 80px);
+  width: 100vw;
 
+  &#home {
+    height: 100%;
+    position: fixed;
+    .svg-img {
+      position: relative;
+      margin: 0;
+      #logo {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
 section {
   padding: 0 5% 10% 15%;
 }
@@ -43,7 +60,7 @@ section {
     }
   }
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 1px;
     height: 80px;

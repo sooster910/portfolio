@@ -1,0 +1,13 @@
+#main-footer {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 29, 29, 0.7);
+  height: 80px;
+  z-index: -1;
+
+  color: $primary-text-color;
+}
