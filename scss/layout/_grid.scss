@@ -12,7 +12,7 @@ ABOUT ME GRID
     'job1 job2'
     'me1 me3';
   grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
+ 
 }
 .bio-image {
   grid-area: cubeimage;

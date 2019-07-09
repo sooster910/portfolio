@@ -231,3 +231,13 @@
     transform: rotate(-15deg);
   }
 }
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

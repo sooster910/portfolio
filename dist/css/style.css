@@ -41,8 +41,6 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* min-width: 100%; */
-  /* min-height: 100%; */
   max-width: 600px;
   min-height: 80%; }
   .landing__border::before {
@@ -464,6 +462,14 @@ object {
     transform: rotate(15deg); }
   100% {
     transform: rotate(-15deg); } }
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
 
 * {
   box-sizing: border-box;
@@ -907,14 +913,6 @@ figure {
   color: #989079; }
 
 /* About page */
-@keyframes animate {
-  0% {
-    transform: scaleX(0);
-    transform-origin: left; }
-  100% {
-    transform: scaleX(1);
-    transform-origin: left; } }
-
 .loader {
   height: 100%;
   width: 100%;
