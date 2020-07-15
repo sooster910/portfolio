@@ -10,12 +10,13 @@ ABOUT ME GRID
     'bio cubeimage '
     'title title'
     'job1 job2'
-    'me1 me3';
+    'job3 me1'
+    'me3 me3';
   grid-template-columns: repeat(2, 1fr);
  
 }
 .bio-image {
-  grid-area: cubeimage;
+//   grid-area: cubeimage;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -82,6 +83,7 @@ ABOUT ME GRID
     }
   }
 }
+
 
 .bio {
   grid-area: bio;

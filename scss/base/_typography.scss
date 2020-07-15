@@ -70,10 +70,10 @@ a {
     @include easeOut;
   }
 }
-p {
+p,li {
   font-family: $font-Lato;
-  font-size: 1rem;
-
+  font-size: 1.1rem;
+  line-height: 1.5rem;
   color: $primary-text-color;
 
   letter-spacing: 0.1rem;
@@ -83,7 +83,24 @@ p {
     letter-spacing: 0.1rem;
     font-family: $font-Lato;
   }
+
 }
+
+.box__conent__list{
+     li{
+        text-indent: -27px;
+        list-style: none;
+        margin-left: 21px;
+        &:before {
+        content:"\1F44D"!important;
+        font-size:14px;
+        padding: 4px;
+        vertical-align:middle;
+        line-height:20px;
+        }
+    }
+}
+
 
 .text-secondary {
   color: $light-color;

@@ -31,7 +31,24 @@
     border: 0px solid $primary-text-color;
   }
 }
+ul.box__content__list{
 
+
+
+    li{
+         list-style: none;
+        font-size: 20px;
+      &:before {
+    content:"\1F44D"!important;
+    font-size:120px;
+    vertical-align:middle;
+    line-height:20px;
+
+
+
+    }
+}
+}
 .box span {
   position: absolute;
   top: 0;
@@ -55,28 +72,34 @@
 .box__1 {
   &::before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url('../img/citytech-logo_copy.png');
+      url('../img/etomon_1.png');
   }
 }
 .box__2 {
   &::before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url('../img/nycdoe.jpg');
+      url('../img/citytech-logo_copy.png');
   }
 }
 .box__3 {
   &::before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url('../img/self-thought.jpg');
+      url('../img/nycdoe.jpg');
   }
 }
 .box__4 {
   &::before {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url('../img/rockclimbing.jpg');
+      url('../img/self-thought.jpg');
   }
 }
+.box__5{
+      &::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('../img/rockclimbing.jpg');
+  }
 
+}
 .box span:nth-child(1) {
   transform: rotate(0deg);
 }
